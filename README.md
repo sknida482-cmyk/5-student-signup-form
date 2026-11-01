@@ -31,4 +31,4 @@ https://sknida482-cmyk.github.io/5-student-signup-form/
 
 ## 👩‍💻 Author
 SHAIKH NIDA
-Created with ❤️ using HTML, CSS, and JavaScript.
+
