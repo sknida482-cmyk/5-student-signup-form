@@ -1,0 +1,383 @@
+/* ==============================
+   Global Styling
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1f3fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+/* ==============================
+   Main Container
+============================== */
+
+.main-container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(30, 40, 90, 0.12);
+}
+
+
+/* ==============================
+   Welcome Section
+============================== */
+
+.welcome-section {
+    background: linear-gradient(145deg, #292b70, #5955bd);
+    color: white;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Background Circles */
+
+.welcome-section::before,
+.welcome-section::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.welcome-section::before {
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    right: -130px;
+}
+
+.welcome-section::after {
+    width: 200px;
+    height: 200px;
+    bottom: 5%;
+    left: -100px;
+}
+
+/* Logo */
+
+.logo {
+    font-size: 23px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.logo span {
+    color: #ffcb69;
+    font-size: 30px;
+}
+
+/* Welcome Content */
+
+.welcome-content {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-content h1 {
+    font-size: 37px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.welcome-content p {
+    color: #dedfff;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+/* Features */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.features div {
+    font-size: 13px;
+    color: #f2f2ff;
+}
+
+.welcome-footer {
+    font-size: 12px;
+    color: #d1d1ef;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ==============================
+   Form Section
+============================== */
+
+.form-section {
+    padding: 45px 55px 25px;
+}
+
+.form-header {
+    margin-bottom: 28px;
+}
+
+.form-header h2 {
+    color: #25265e;
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.form-header p {
+    color: #88889b;
+    font-size: 12px;
+}
+
+
+/* ==============================
+   Input Fields
+============================== */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+    flex: 1;
+    min-width: 0;
+}
+
+.input-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #35355d;
+    margin-bottom: 7px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #dedfee;
+    border-radius: 8px;
+    padding: 0 13px;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+    background: #fafaff;
+    color: #33334f;
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #605bc4;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(96, 91, 196, 0.1);
+}
+
+.input-group input::placeholder {
+    color: #a5a5b6;
+}
+
+/* Two Column Layout */
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* ==============================
+   Password Styling
+============================== */
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 65px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #5955bd;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* ==============================
+   Terms and Conditions
+============================== */
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 5px 0 20px;
+}
+
+.terms input {
+    accent-color: #5955bd;
+    cursor: pointer;
+}
+
+.terms label {
+    font-size: 11px;
+    color: #77778b;
+    cursor: pointer;
+}
+
+
+/* ==============================
+   Sign Up Button
+============================== */
+
+.signup-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #5551b8, #7771dc);
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(90deg, #39358f, #5955bd);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(89, 85, 189, 0.2);
+}
+
+
+/* ==============================
+   Success Message
+============================== */
+
+.message {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.message.success {
+    color: #16834b;
+}
+
+.message.error {
+    color: #d93636;
+}
+
+
+/* ==============================
+   Footer
+============================== */
+
+.form-footer {
+    text-align: center;
+    color: #a0a0b0;
+    font-size: 10px;
+    margin-top: 25px;
+}
+
+
+/* ==============================
+   Responsive Design
+============================== */
+
+@media (max-width: 850px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .welcome-section {
+        min-height: 330px;
+        padding: 30px;
+    }
+
+    .welcome-content h1 {
+        font-size: 30px;
+    }
+
+    .welcome-footer {
+        margin-top: 30px;
+    }
+
+    .form-section {
+        padding: 35px;
+    }
+}
+
+
+/* Mobile Devices */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .main-container {
+        border-radius: 14px;
+    }
+
+    .welcome-section {
+        min-height: 300px;
+        padding: 25px;
+    }
+
+    .welcome-content h1 {
+        font-size: 26px;
+    }
+
+    .form-section {
+        padding: 25px 20px;
+    }
+
+    .form-header h2 {
+        font-size: 24px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

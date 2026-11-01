@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Left Side Information Section -->
+        <div class="welcome-section">
+
+            <div class="logo">
+                <span>✦</span> EduRegister
+            </div>
+
+            <div class="welcome-content">
+                <h1>Start Your<br>Learning Journey!</h1>
+
+                <p>
+                    Join our student community and take
+                    the next step towards building your future.
+                </p>
+
+                <div class="features">
+                    <div>✓ Easy Student Registration</div>
+                    <div>✓ Manage Your Academic Profile</div>
+                    <div>✓ Explore Learning Opportunities</div>
+                </div>
+            </div>
+
+            <div class="welcome-footer">
+                Learn Today, Lead Tomorrow.
+            </div>
+
+        </div>
+
+
+        <!-- Right Side Registration Form -->
+        <div class="form-section">
+
+            <div class="form-header">
+                <h2>Create Account</h2>
+                <p>Fill in your details to register as a student.</p>
+            </div>
+
+            <!-- Registration Form -->
+            <form id="signupForm">
+
+                <!-- Full Name -->
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <!-- Email and Phone -->
+                <div class="form-row">
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="example@gmail.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="10-digit number"
+                            pattern="[0-9]{10}"
+                            maxlength="10"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <!-- Student ID -->
+                <div class="input-group">
+                    <label for="studentId">Student ID</label>
+                    <input
+                        type="text"
+                        id="studentId"
+                        placeholder="Enter your student ID"
+                        required
+                    >
+                </div>
+
+                <!-- Course and Academic Year -->
+                <div class="form-row">
+
+                    <div class="input-group">
+                        <label for="course">Select Course</label>
+
+                        <select id="course" required>
+                            <option value="">Choose course</option>
+                            <option value="BCA">BCA</option>
+                            <option value="BBA">BBA</option>
+                            <option value="BSc">B.Sc</option>
+                            <option value="BA">BA</option>
+                            <option value="BCom">B.Com</option>
+                            <option value="MCA">MCA</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="year">Academic Year</label>
+
+                        <select id="year" required>
+                            <option value="">Select year</option>
+                            <option value="First Year">First Year</option>
+                            <option value="Second Year">Second Year</option>
+                            <option value="Third Year">Third Year</option>
+                            <option value="Fourth Year">Fourth Year</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- Password -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-box">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            minlength="8"
+                            required
+                        >
+
+                        <button type="button" class="toggle-password"
+                            data-target="password">Show</button>
+                    </div>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <div class="password-box">
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            required
+                        >
+
+                        <button type="button" class="toggle-password"
+                            data-target="confirmPassword">Show</button>
+                    </div>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+
+                    <label for="terms">
+                        I agree to the Terms & Conditions.
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="signup-btn">
+                    Create Account →
+                </button>
+
+                <!-- Success Message -->
+                <p id="message" class="message" aria-live="polite"></p>
+
+            </form>
+
+            <!-- Form Footer -->
+            <div class="form-footer">
+                © 2026 EduRegister. All rights reserved.
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
